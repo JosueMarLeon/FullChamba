@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_header_navigation_view">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewHeaderUser"
+        android:layout_width="@dimen/imagen_cuerpo"
+        android:layout_height="@dimen/imagen_cuerpo"
+        android:layout_marginStart="@dimen/separacion_elemento_elemento"
+        android:layout_marginTop="@dimen/separacion_elemento_elemento"
+        android:src="@drawable/logofullchamba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIdEmpleadoHeaderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacion_elemento_elemento"
+        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+        android:text="@string/id_empleado"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="@dimen/texto_detalle"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHeaderUser" />
+
+    <TextView
+        android:id="@+id/textViewIdHeaderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+        android:text="@string/id"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="@dimen/texto_detalle"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewIdEmpleadoHeaderUser"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHeaderUser" />
+
+    <TextView
+        android:id="@+id/textViewNombreHeaderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacion_elemento_elemento"
+        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+        android:text="@string/nombre"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="@dimen/texto_detalle"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdEmpleadoHeaderUser" />
+
+    <TextView
+        android:id="@+id/textViewApellidoHeaderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+        android:text="@string/apellido"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="@dimen/texto_detalle"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewNombreHeaderUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdEmpleadoHeaderUser" />
+
+    <TextView
+        android:id="@+id/textViewCelularHeaderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacion_elemento_elemento"
+        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+        android:text="@string/celular"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="@dimen/texto_detalle"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreHeaderUser" />
+
+
+    <TextView
+        android:id="@+id/textViewCorreorHeaderUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacion_elemento_elemento"
+        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+        android:layout_marginBottom="@dimen/separacion_elemento_elemento"
+        android:text="@string/correo"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="@dimen/texto_detalle"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCelularHeaderUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

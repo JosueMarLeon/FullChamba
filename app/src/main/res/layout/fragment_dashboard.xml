@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.DashboardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginTop="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginEnd="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginBottom="@dimen/separacion_contenedor_cuerpo"
+        app:cardCornerRadius="@dimen/border_radius"
+        app:cardElevation="@dimen/sombra_tarjeta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/separacion_elemento_elemento">
+
+            <TextView
+                android:id="@+id/textViewTituloDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_elemento_elemento"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/dashboard"
+                android:textSize="@dimen/texto_titulo"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewProjectTimeDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                app:cardCornerRadius="@dimen/border_radius"
+                app:cardElevation="@dimen/sombra_tarjeta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTituloDashboard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewProjectTimeDashboard"
+                        android:layout_width="@dimen/imagen_dashboard"
+                        android:layout_height="@dimen/imagen_dashboard"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:src="@drawable/projecttime"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:layout_marginBottom="@dimen/separacion_contenido_contenido"
+                        android:text="@string/projecttime"
+                        android:textSize="@dimen/texto_dashboard"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewProjectTimeDashboard" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewProjectMoneyDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                app:cardCornerRadius="@dimen/border_radius"
+                app:cardElevation="@dimen/sombra_tarjeta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTituloDashboard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewProjectMoneyDashboard"
+                        android:layout_width="@dimen/imagen_dashboard"
+                        android:layout_height="@dimen/imagen_dashboard"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:src="@drawable/projectmoney"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:layout_marginBottom="@dimen/separacion_contenido_contenido"
+                        android:text="@string/projectmoney"
+                        android:textSize="@dimen/texto_dashboard"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewProjectMoneyDashboard" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewPrincipalActivityDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginBottom="@dimen/separacion_contenido_contenido"
+                app:cardCornerRadius="@dimen/border_radius"
+                app:cardElevation="@dimen/sombra_tarjeta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewProjectTimeDashboard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewPrincipalActivityDashboard"
+                        android:layout_width="@dimen/imagen_dashboard"
+                        android:layout_height="@dimen/imagen_dashboard"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:src="@drawable/principalactivity"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:layout_marginBottom="@dimen/separacion_contenido_contenido"
+                        android:text="@string/principalactivity"
+                        android:textSize="@dimen/texto_dashboard"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewPrincipalActivityDashboard" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewWorktimeDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                android:layout_marginBottom="@dimen/separacion_contenido_contenido"
+                app:cardCornerRadius="@dimen/border_radius"
+                app:cardElevation="@dimen/sombra_tarjeta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewProjectMoneyDashboard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewWorktimeDashboard"
+                        android:layout_width="@dimen/imagen_dashboard"
+                        android:layout_height="@dimen/imagen_dashboard"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:src="@drawable/worktime"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                        android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                        android:layout_marginEnd="@dimen/separacion_contenido_contenido"
+                        android:layout_marginBottom="@dimen/separacion_contenido_contenido"
+                        android:text="@string/worktime"
+                        android:textSize="@dimen/texto_dashboard"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewWorktimeDashboard" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

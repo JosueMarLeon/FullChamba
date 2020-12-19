@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/usuario">
+
+        <menu>
+            <item
+                android:id="@+id/inicio"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="@string/inicio" />
+
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_baseline_person_outline_24"
+                android:title="@string/perfil" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/trabajo">
+
+        <menu>
+            <item
+                android:id="@+id/tarea"
+                android:icon="@drawable/ic_baseline_work_outline_24"
+                android:title="@string/tarea" />
+
+            <item
+                android:id="@+id/dashboard"
+                android:icon="@drawable/ic_baseline_dashboard_24"
+                android:title="@string/dashboard" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/salir">
+
+        <menu>
+            <item
+                android:id="@+id/salir"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="@string/cerrar_sesion" />
+        </menu>
+
+    </item>
+
+</menu>

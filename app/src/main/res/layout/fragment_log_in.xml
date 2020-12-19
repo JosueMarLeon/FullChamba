@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LogInFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/separacion_contenedor_cuerpo"
+        app:cardCornerRadius="@dimen/border_radius"
+        app:cardElevation="@dimen/sombra_tarjeta"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/separacion_elemento_contenedor">
+
+            <TextView
+                android:id="@+id/textViewTituloLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_elemento_elemento"
+                android:text="@string/log_in"
+                android:textSize="@dimen/texto_titulo"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSignUpLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/separacion_elemento_elemento"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/sign_up"
+                android:textSize="@dimen/texto_cuerpo"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextCelularLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:ems="10"
+                android:hint="@string/celular"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTituloLogIn" />
+
+            <EditText
+                android:id="@+id/editTextClaveLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:ems="10"
+                android:hint="@string/clave"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCelularLogIn" />
+
+            <Button
+                android:id="@+id/buttonLogInLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:layout_marginBottom="@dimen/separacion_elemento_elemento"
+                android:text="@string/log_in"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextClaveLogIn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

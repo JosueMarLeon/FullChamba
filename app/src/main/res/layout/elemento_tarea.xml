@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginTop="@dimen/separacion_elemento_elemento"
+        android:layout_marginEnd="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginBottom="@dimen/separacion_elemento_elemento"
+        app:cardCornerRadius="@dimen/border_radius"
+        app:cardElevation="@dimen/sombra_tarjeta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/separacion_elemento_elemento">
+
+            <ImageView
+                android:id="@+id/imageViewImagenElementoTarea"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_elemento_elemento"
+                android:layout_marginBottom="@dimen/separacion_elemento_elemento"
+                android:contentDescription="@string/tarea_realizada"
+                android:src="@drawable/ic_baseline_work_outline_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewNombreElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/nombre"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewActividadElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/actividad"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNombreElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewClienteElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/cliente"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewActividadElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewProyectoElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/proyecto"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewClienteElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewFechaElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/fecha"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewBarraVerticalElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/barra_vertical"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewFechaElementoTarea"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewSimboloSolElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/simbolo_sol"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewBarraVerticalElementoTarea"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewCostoElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_simbolo"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/costo"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewSimboloSolElementoTarea"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewGuionElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/guion"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewCostoElementoTarea"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewHoraElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_contenido"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/hora"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewGuionElementoTarea"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+            <TextView
+                android:id="@+id/textViewSimboloHoraElementoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_contenido_simbolo"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:text="@string/simbolo_hora"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewHoraElementoTarea"
+                app:layout_constraintTop_toBottomOf="@+id/textViewProyectoElementoTarea" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

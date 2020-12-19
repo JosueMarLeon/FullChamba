@@ -1,0 +1,68 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">Full Chamba</string>
+
+    <string name="bienvenido">Bienvenido</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="id_empleado">id empleado:</string>
+    <string name="id">id</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="celular">Celular</string>
+    <string name="correo">Correo</string>
+    <string name="clave">Clave</string>
+    <string name="estado">Estado</string>
+    <string name="cargo">Cargo</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Perfil</string>
+    <string name="trabajo">Trabajo</string>
+    <string name="tarea">Tarea</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="salir">Salir</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="agregar_tarea">Agregar tarea</string>
+
+    <string name="registro">Registro</string>
+    <string name="complejidad">Complejidad</string>
+    <string name="horas">Horas</string>
+    <string name="fecha">Fecha</string>
+    <string name="proyecto_id">Proyecto Id</string>
+    <string name="actividad_id">Actividad Id</string>
+    <string name="empleado_id">Empleado Id</string>
+    <string name="registrar">Registrar</string>
+
+    <string name="tarea_realizada">Tarea realizada</string>
+    <string name="actividad">Actividad</string>
+    <string name="cliente">Cliente</string>
+    <string name="proyecto">Proyecto</string>
+    <string name="barra_vertical">|</string>
+    <string name="simbolo_sol">S/</string>
+    <string name="costo">Costo</string>
+    <string name="guion">-</string>
+    <string name="hora">Hora</string>
+    <string name="simbolo_hora">h</string>
+
+    <string name="actualizaci_n">Actualización</string>
+    <string name="actualizar">Actualizar</string>
+
+    <string name="detalle">Detalle</string>
+    <string name="total">Total</string>
+    <string name="asterisco">*</string>
+    <string name="simbolo_igual">=</string>
+
+    <string name="projecttime">Horas por proyecto</string>
+    <string name="projectmoney">Ingresos por proyecto</string>
+    <string name="principalactivity">Actividades principales</string>
+    <string name="worktime">Horas trabajadas</string>
+
+</resources>

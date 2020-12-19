@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.fullchamba.fragment.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_inicioFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.fullchamba.fragment.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_logInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_tareaFragment"
+            app:destination="@id/tareaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.fullchamba.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tareaFragment"
+        android:name="com.example.fullchamba.fragment.TareaFragment"
+        android:label="fragment_tarea"
+        tools:layout="@layout/fragment_tarea">
+        <action
+            android:id="@+id/action_tareaFragment_to_inicioFragment2"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/action_tareaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_tareaFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_tareaFragment_to_detalleTareaFragment2"
+            app:destination="@id/detalleTareaFragment" />
+        <action
+            android:id="@+id/action_tareaFragment_to_actualizaTareaFragment"
+            app:destination="@id/actualizaTareaFragment" />
+        <action
+            android:id="@+id/action_tareaFragment_to_registroTareaFragment2"
+            app:destination="@id/registroTareaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.fullchamba.fragment.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil">
+        <action
+            android:id="@+id/action_perfilFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_tareaFragment"
+            app:destination="@id/tareaFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_actualizaEmpleadoFragment"
+            app:destination="@id/actualizaEmpleadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.fullchamba.fragment.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_tareaFragment"
+            app:destination="@id/tareaFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroTareaFragment"
+        android:name="com.example.fullchamba.fragment.RegistroTareaFragment"
+        android:label="fragment_registro_tarea"
+        tools:layout="@layout/fragment_registro_tarea">
+        <action
+            android:id="@+id/action_registroTareaFragment_to_tareaFragment"
+            app:destination="@id/tareaFragment" />
+        <action
+            android:id="@+id/action_registroTareaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_registroTareaFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleTareaFragment"
+        android:name="com.example.fullchamba.fragment.DetalleTareaFragment"
+        android:label="fragment_detalle_tarea"
+        tools:layout="@layout/fragment_detalle_tarea">
+        <action
+            android:id="@+id/action_detalleTareaFragment_to_tareaFragment"
+            app:destination="@id/tareaFragment" />
+        <action
+            android:id="@+id/action_detalleTareaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_detalleTareaFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizaTareaFragment"
+        android:name="com.example.fullchamba.fragment.ActualizaTareaFragment"
+        android:label="fragment_actualiza_tarea"
+        tools:layout="@layout/fragment_actualiza_tarea">
+        <action
+            android:id="@+id/action_actualizaTareaFragment_to_tareaFragment"
+            app:destination="@id/tareaFragment" />
+        <action
+            android:id="@+id/action_actualizaTareaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_actualizaTareaFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizaEmpleadoFragment"
+        android:name="com.example.fullchamba.fragment.ActualizaEmpleadoFragment"
+        android:label="fragment_actualiza_empleado"
+        tools:layout="@layout/fragment_actualiza_empleado" >
+        <action
+            android:id="@+id/action_actualizaEmpleadoFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+    </fragment>
+
+</navigation>

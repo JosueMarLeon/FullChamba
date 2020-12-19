@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PerfilFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginTop="@dimen/separacion_elemento_elemento"
+        android:layout_marginEnd="@dimen/separacion_contenedor_cuerpo"
+        android:layout_marginBottom="@dimen/separacion_elemento_elemento"
+        app:cardCornerRadius="@dimen/border_radius"
+        app:cardElevation="@dimen/sombra_tarjeta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/separacion_elemento_elemento">
+
+            <TextView
+                android:id="@+id/textViewTituloPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/perfil"
+                android:textSize="@dimen/texto_titulo"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewImagenPerfil"
+                android:layout_width="@dimen/imagen_cuerpo"
+                android:layout_height="@dimen/imagen_cuerpo"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:contentDescription="@string/tarea_realizada"
+                android:src="@drawable/logofullchamba"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTituloPerfil" />
+
+            <TextView
+                android:id="@+id/textViewIdPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/id"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewImagenPerfil" />
+
+            <TextView
+                android:id="@+id/textViewNombrePerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/nombre"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIdPerfil" />
+
+            <TextView
+                android:id="@+id/textViewApellidoPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/apellido"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNombrePerfil" />
+
+            <TextView
+                android:id="@+id/textViewCelularPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/celular"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewApellidoPerfil" />
+
+            <TextView
+                android:id="@+id/textViewCorreoPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/correo"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCelularPerfil" />
+
+            <TextView
+                android:id="@+id/textViewClavePerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/clave"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCorreoPerfil" />
+
+            <TextView
+                android:id="@+id/textViewEstadoPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/estado"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewClavePerfil" />
+
+            <TextView
+                android:id="@+id/textViewCargo_IdPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/separacion_elemento_elemento"
+                android:layout_marginTop="@dimen/separacion_contenido_contenido"
+                android:layout_marginEnd="@dimen/separacion_elemento_elemento"
+                android:text="@string/cargo"
+                android:textAlignment="center"
+                android:textSize="@dimen/texto_cuerpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEstadoPerfil" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

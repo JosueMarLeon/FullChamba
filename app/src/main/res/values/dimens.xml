@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="texto_titulo">24sp</dimen>
+    <dimen name="texto_cuerpo">18sp</dimen>
+    <dimen name="texto_detalle">14sp</dimen>
+    <dimen name="texto_dashboard">10sp</dimen>
+
+    <dimen name="separacion_contenedor_cuerpo">32dp</dimen>
+    <dimen name="separacion_elemento_contenedor">24dp</dimen>
+    <dimen name="separacion_elemento_elemento">16dp</dimen>
+    <dimen name="separacion_contenido_contenido">8dp</dimen>
+    <dimen name="separacion_contenido_simbolo">4dp</dimen>
+
+    <dimen name="sombra_tarjeta">5dp</dimen>
+    <dimen name="border_radius">10dp</dimen>
+
+    <dimen name="imagen_inicio">250dp</dimen>
+    <dimen name="imagen_cuerpo">100dp</dimen>
+    <dimen name="imagen_dashboard">120dp</dimen>
+
+</resources>
